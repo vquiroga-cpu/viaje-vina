@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Con amigas · Viña del Mar y Reñaca</title>
+  <meta name="description" content="Presupuesto del viaje con amigas a Viña del Mar y Reñaca, del 8 al 14 de enero.">
+  <meta name="theme-color" content="#f6f1eb">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='10' fill='%238fb3c4'/%3E%3Ccircle cx='21' cy='12' r='5' fill='%23f3d9c9'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <span class="logo"><i aria-hidden="true"></i>Viña &amp; Reñaca</span>
+      <nav class="topnav" aria-label="Secciones">
+        <a href="#presupuesto">Presupuesto</a>
+        <a href="#estadia">Estadía</a>
+        <a href="#viaje">Viaje</a>
+        <a href="#compras">Compras</a>
+        <a href="#cambio">Cambio</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Viaje con amigas</p>
+        <h1>Viña del Mar y Reñaca</h1>
+        <p class="lede">Del 8 al 14 de enero, seis amigas. Acá está la plata, la estadía, el viaje y dónde comprar.</p>
+        <ul class="chips">
+          <li>8 al 14 de enero</li>
+          <li>6 personas</li>
+          <li>Edificio Yellowstone</li>
+        </ul>
+      </div>
+      <svg class="hero-waves" viewBox="0 0 420 124" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 16c42-14 84-14 126 0s84 14 126 0 84-14 126 0 30 8 42 4v104H0Z" fill="#c4dbe4"/>
+        <path d="M0 46c42-12 84-12 126 0s84 12 126 0 84-12 126 0 30 7 42 3v75H0Z" fill="#aac8d5"/>
+        <path d="M0 76c42-10 84-10 126 0s84 10 126 0 84-10 126 0 30 6 42 2v46H0Z" fill="#fffaf5" fill-opacity=".9"/>
+      </svg>
+      <div class="hero-art" aria-hidden="true">
+        <span class="sun"></span>
+        <div class="float float-a">
+          <small>Por persona</small>
+          <b>USD <span data-total-for="amigas">470</span></b>
+        </div>
+        <div class="float float-b">
+          <small>Llegada</small>
+          <b>Viernes 6:45</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="presupuesto">
+      <div class="section-head">
+        <p class="eyebrow">Presupuesto</p>
+        <h2>Cuánto pone cada una</h2>
+      </div>
+
+      <article class="ticket budget" data-trip="amigas" data-days="7">
+        <div class="summary">
+          <p class="label">Total por persona</p>
+          <div class="total"><b>470</b><span>USD</span></div>
+          <p class="equation">120 + 200 + 100 + 50</p>
+          <div class="bar" aria-hidden="true">
+            <i class="c-stay" style="flex-grow: 120"></i>
+            <i class="c-food" style="flex-grow: 200"></i>
+            <i class="c-out" style="flex-grow: 100"></i>
+            <i class="c-beach" style="flex-grow: 50"></i>
+          </div>
+          <p class="hint">Tocá − o + para mover cada gasto de a 10 dólares. El total se recalcula solo.</p>
+        </div>
+
+        <ul class="tiles">
+          <li class="tile">
+            <span class="icon c-stay" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+            </span>
+            <h3>Alojamiento</h3>
+            <p>Airbnb de los 7 días. El lugar salió USD 700, entre las 6.</p>
+            <div class="stepper">
+              <button type="button" data-dir="-1" aria-label="Bajar alojamiento">−</button>
+              <p class="price"><small>USD</small><span data-amount data-value="120">120</span></p>
+              <button type="button" data-dir="1" aria-label="Subir alojamiento">+</button>
+            </div>
+          </li>
+          <li class="tile">
+            <span class="icon c-food" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+            </span>
+            <h3>Comida</h3>
+            <p data-per-day>Comidas de los 7 días, unos USD 29 por día.</p>
+            <div class="stepper">
+              <button type="button" data-dir="-1" aria-label="Bajar comida">−</button>
+              <p class="price"><small>USD</small><span data-amount data-value="200">200</span></p>
+              <button type="button" data-dir="1" aria-label="Subir comida">+</button>
+            </div>
+          </li>
+          <li class="tile">
+            <span class="icon c-out" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></svg>
+            </span>
+            <h3>Salidas</h3>
+            <p>Bares y salidas de noche, de toda la semana.</p>
+            <div class="stepper">
+              <button type="button" data-dir="-1" aria-label="Bajar salidas">−</button>
+              <p class="price"><small>USD</small><span data-amount data-value="100">100</span></p>
+              <button type="button" data-dir="1" aria-label="Subir salidas">+</button>
+            </div>
+          </li>
+          <li class="tile">
+            <span class="icon c-beach" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </span>
+            <h3>Playa</h3>
+            <p>USD 50 en total, para todos los días de playa.</p>
+            <div class="stepper">
+              <button type="button" data-dir="-1" aria-label="Bajar playa">−</button>
+              <p class="price"><small>USD</small><span data-amount data-value="50">50</span></p>
+              <button type="button" data-dir="1" aria-label="Subir playa">+</button>
+            </div>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <div class="split">
+      <section class="section" id="estadia">
+        <div class="section-head">
+          <p class="eyebrow">La estadía</p>
+          <h2>Edificio Yellowstone</h2>
+        </div>
+        <article class="card stay">
+          <div class="times">
+            <div><small>Entrada</small><b>14:00</b></div>
+            <div><small>Salida</small><b>12:00</b></div>
+          </div>
+          <p>Queda en Reñaca, a unos 100 metros de Lider Express y Santa Isabel.</p>
+          <p class="muted">Reserva de Airbnb: código HMMBC3HRKB. La dirección exacta y el wifi están en la reserva.</p>
+          <a class="btn map" href="https://www.google.com/maps/place/Edificio+Yellowstone/@-32.9699275,-71.5433273,19z/data=!4m9!1m2!2m1!1sTerminal+Rodoviario+Vi%C3%B1a+del+Mar+Avenida+Valparaiso+1055!3m5!1s0x9689dd0e59d94d2f:0x690385c241b5ab69!8m2!3d-32.9699598!4d-71.5416875!16s%2Fg%2F11cjkdtngx" target="_blank" rel="noopener">Abrir en Google Maps</a>
+        </article>
+      </section>
+
+      <section class="section" id="viaje">
+        <div class="section-head">
+          <p class="eyebrow">Cómo llegamos</p>
+          <h2>De Mendoza a Reñaca</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <span class="step">1</span>
+            <div class="card">
+              <p class="when-big">Jueves 22:45 <span>→ viernes 6:45 · $59.500 ida</span></p>
+              <h3>Terminal de Mendoza → Terminal de Viña</h3>
+              <p>Sale de la Terminal de Ómnibus, Av. Belgrano y Av. Alberdi, Guaymallén. Llega a la Terminal Rodoviario, Av. Valparaíso 1055. Son unas 8 horas de viaje. <strong>Ese tiempo no incluye la aduana.</strong></p>
+              <p class="links"><a class="map" href="https://www.google.com/maps/search/?api=1&query=Terminal+de+omnibus+Mendoza+Belgrano+y+Alberdi" target="_blank" rel="noopener">Terminal de Mendoza</a><a class="map" href="https://www.google.com/maps/search/?api=1&query=Terminal+Rodoviario+Viña+del+Mar+Avenida+Valparaiso+1055" target="_blank" rel="noopener">Terminal de Viña</a></p>
+              <a class="btn btn-alarm" href="viaje-ida.ics">Agendar y poner alarma</a>
+              <p class="alarm-note">Lo guarda en el calendario el jueves 7 de enero, con una alarma 2 horas antes de salir.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step">2</span>
+            <div class="card">
+              <p class="meta">21 a 24 min · menos de USD 1</p>
+              <h3>Terminal de Viña → Reñaca</h3>
+              <p>Micro 605 o 609, unos 7 km. Entre $390 y $840, en efectivo al chofer.</p>
+            </div>
+          </li>
+        </ol>
+        <p class="muted">El pasaje no está dentro de los USD 470. La vuelta todavía no tiene precio ni horario.</p>
+      </section>
+    </div>
+
+    <section class="section" id="compras">
+      <div class="section-head">
+        <p class="eyebrow">Mercadería</p>
+        <h2>Lider Express o Santa Isabel</h2>
+        <p class="sub">Están a unos 100 metros uno del otro. El más recomendado es Lider Express: tiene mejor nota y las reseñas hablan más seguido de precios bajos.</p>
+      </div>
+      <div class="table-card">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th scope="col"><span class="sr-only">Dato</span></th>
+              <th scope="col" class="pick"><span class="star" aria-hidden="true">★</span> Lider Express <span class="badge">Más recomendado</span></th>
+              <th scope="col">Santa Isabel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Dirección</th>
+              <td>Av. Borgoño 14650</td>
+              <td>Rafael Sotomayor 230, Reñaca</td>
+            </tr>
+            <tr>
+              <th scope="row">Horario</th>
+              <td>Lunes a sábado 8:00 a 21:30. Domingo hasta las 21:00. Confirmar antes de ir.</td>
+              <td>Todos los días de 8:30 a 21:00</td>
+            </tr>
+            <tr>
+              <th scope="row">Opiniones</th>
+              <td>4,4 en Google (896)</td>
+              <td>4,1 en Google (2.558)</td>
+            </tr>
+            <tr>
+              <th scope="row">Lo que dice la gente</th>
+              <td>Buenos precios, ofertas y rápido. Es chico y tiene poca variedad de marcas.</td>
+              <td>Bien surtido y con buenos precios en algunas cosas. Hay quien dice que no es barato.</td>
+            </tr>
+            <tr>
+              <th scope="row">Estacionamiento</th>
+              <td>Pagado. Una reseña lo marca como caro.</td>
+              <td>$25 por minuto, gratis con cierto monto de compra.</td>
+            </tr>
+            <tr>
+              <th scope="row">Conviene para</th>
+              <td>Compras chicas y rápidas, ofertas puntuales.</td>
+              <td>La compra más completa de la semana.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="links"><a class="map" href="https://www.google.com/maps/search/?api=1&query=Express+de+Lider+Av+Borgoño+14650+Viña+del+Mar" target="_blank" rel="noopener">Lider Express</a><a class="map" href="https://www.google.com/maps/search/?api=1&query=Santa+Isabel+Rafael+Sotomayor+230+Reñaca" target="_blank" rel="noopener">Santa Isabel</a></p>
+    </section>
+
+    <section class="section" id="cambio">
+      <div class="section-head">
+        <p class="eyebrow">Cambio</p>
+        <h2>Dónde cambiar la plata</h2>
+        <p class="sub">Conviene una casa de cambio, no la terminal. El 12 de noviembre de 2026 el dólar del Banco Central estaba en $984 y la casa de cambio paga un poco menos. Llevá billetes en buen estado.</p>
+      </div>
+      <div class="cards-2">
+        <article class="card place">
+          <p class="meta">En Reñaca</p>
+          <h3>Cambios Guiñazú</h3>
+          <p>Av. Borgoño 14830. En verano abre todos los días, de 9 a 18.</p>
+          <p class="links"><a class="map" href="https://www.google.com/maps/search/?api=1&query=Cambios+Guiñazu+Borgoño+14830+Reñaca" target="_blank" rel="noopener">Cambios Guiñazú</a></p>
+        </article>
+        <article class="card place">
+          <p class="meta">En Viña, para comparar</p>
+          <h3>Calle Arlegui y Mall Marina</h3>
+          <p>En Arlegui, entre el 610 y el 690, hay varias casas juntas. AFEX Arlegui 690 abre de lunes a viernes de 9 a 18 y el sábado de 10 a 14. El domingo abre el AFEX del Mall Marina, Av. Libertad 1348, de 10 a 18.</p>
+          <p class="links"><a class="map" href="https://www.google.com/maps/search/?api=1&query=AFEX+Arlegui+690+Viña+del+Mar" target="_blank" rel="noopener">AFEX del centro</a><a class="map" href="https://www.google.com/maps/search/?api=1&query=AFEX+Mall+Marina+Libertad+1348+Viña+del+Mar" target="_blank" rel="noopener">AFEX del Mall Marina</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section notes">
+      <h2>Para tener en cuenta</h2>
+      <ul>
+        <li>Cada monto del presupuesto es por persona.</li>
+        <li>Este viaje no incluye excursiones ni compras.</li>
+        <li>El micro llega a las 6:45 y el departamento se abre a las 14:00. Hay que pedir entrada temprana o dejar el equipaje antes.</li>
+        <li>El pasaje de ida ($59.500) no entra en los USD 470.</li>
+      </ul>
+    </section>
+
+    <footer class="foot">Viña del Mar y Reñaca · Enero 2027</footer>
+  </div>
+
+<script>
+document.querySelectorAll(".ticket").forEach((ticket) => {
+  const total = ticket.querySelector(".total b");
+  const equation = ticket.querySelector(".equation");
+  const bars = [...ticket.querySelectorAll(".bar i")];
+  const amounts = [...ticket.querySelectorAll("[data-amount]")];
+  const perDay = ticket.querySelector("[data-per-day]");
+  const days = Number(ticket.dataset.days);
+  const door = document.querySelector(`[data-total-for="${ticket.dataset.trip}"]`);
+
+  function paint() {
+    const values = amounts.map((el) => Number(el.dataset.value));
+    amounts.forEach((el, i) => { el.textContent = values[i]; });
+    const sum = values.reduce((a, b) => a + b, 0);
+    total.textContent = sum;
+    equation.textContent = values.join(" + ");
+    bars.forEach((bar, i) => { bar.style.flexGrow = values[i]; });
+    if (door) door.textContent = sum;
+    if (perDay) perDay.textContent = `Comidas de los ${days} días, unos USD ${Math.round(values[1] / days)} por día.`;
+  }
+
+  ticket.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-dir]");
+    if (!button) return;
+    const amount = button.parentElement.querySelector("[data-amount]");
+    const next = Math.max(0, Number(amount.dataset.value) + Number(button.dataset.dir) * 10);
+    amount.dataset.value = String(next);
+    paint();
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Viaje Vina//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Argentina/Mendoza
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:-0300
+TZOFFSETTO:-0300
+TZNAME:ART
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:viaje-mendoza-vina-20270107@viaje-vina
+DTSTAMP:20261116T140000Z
+DTSTART;TZID=America/Argentina/Mendoza:20270107T224500
+DTEND;TZID=America/Argentina/Mendoza:20270108T064500
+SUMMARY:Micro Mendoza a Viña del Mar
+LOCATION:Terminal de Ómnibus de Mendoza\, Av. Belgrano y Av. Alberdi
+DESCRIPTION:Salida 22:45 del jueves 7 de enero desde la Terminal de Mendoza. Llegada 6:45 del viernes 8 a la Terminal de Viña del Mar\, Av. Valparaíso 1055. Pasaje de ida $59.500. Las 8 horas de viaje no incluyen la aduana.
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:En 2 horas sale el micro de Mendoza a Viña. La aduana no está incluida en las 8 horas de viaje.
+END:VALARM
+END:VEVENT
+END:VCALENDAR
