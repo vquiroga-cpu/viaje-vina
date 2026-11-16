@@ -762,7 +762,102 @@ a.map:focus-visible { outline: 2px solid var(--blue-deep); outline-offset: 2px; 
   .split { grid-template-columns: 1fr 1fr; }
 }
 
+/* Entrada */
+
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  align-items: end;
+  background: linear-gradient(165deg, #b7d0db 0%, #8fb3c4 58%, #7ea5b7 100%);
+  color: #fff;
+  animation: intro-leave 0.7s ease 1.55s forwards;
+}
+
+.intro-scene {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 48px;
+  text-align: center;
+}
+
+.intro-sun {
+  width: 84px;
+  height: 84px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background: #f6dcc9;
+  box-shadow: 0 0 0 18px rgba(255, 255, 255, 0.16);
+  animation: sun-rise 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.intro-scene p,
+.intro-scene span {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fade-up 0.6s ease 0.35s forwards;
+}
+
+.intro-scene strong {
+  font-size: clamp(36px, 8vw, 58px);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  opacity: 0;
+  animation: fade-up 0.7s ease 0.5s forwards;
+}
+
+.intro-waves {
+  width: 100%;
+  height: 110px;
+  animation: wave-in 1s ease 0.15s both;
+}
+
+.wrap > * {
+  animation: fade-up 0.7s ease 1.7s both;
+}
+
+@keyframes sun-rise {
+  from { transform: translateY(36px) scale(0.7); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes wave-in {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+@keyframes intro-leave {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6%);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .bar i, .stepper button, .btn { transition: none; }
+  .intro { display: none; }
+  .wrap > *,
+  .intro-sun,
+  .intro-scene p,
+  .intro-scene span,
+  .intro-scene strong,
+  .intro-waves { animation: none; opacity: 1; }
 }
